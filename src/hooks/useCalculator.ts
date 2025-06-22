@@ -117,6 +117,32 @@ export const useCalculator = (unitFormat: UnitFormat = 'decimal') => {
     }));
   }, []);
 
+  const handlePercentClick = useCallback(() => {
+    setState(prevState => {
+      let value = parseFloat(prevState.display);
+      if (isNaN(value)) return prevState;
+      value = value / 100;
+      return {
+        ...prevState,
+        display: formatNumber(value, unitFormat),
+        waitingForNewValue: false,
+      };
+    });
+  }, [unitFormat]);
+
+  const handlePlusMinusClick = useCallback(() => {
+    setState(prevState => {
+      let value = parseFloat(prevState.display);
+      if (isNaN(value)) return prevState;
+      value = -value;
+      return {
+        ...prevState,
+        display: formatNumber(value, unitFormat),
+        waitingForNewValue: false,
+      };
+    });
+  }, [unitFormat]);
+
   return {
     state,
     inputNumber,
@@ -126,5 +152,7 @@ export const useCalculator = (unitFormat: UnitFormat = 'decimal') => {
     clearEntry,
     handleBackspaceClick,
     handleDecimalClick,
+    handlePercentClick,
+    handlePlusMinusClick,
   };
 }; 
