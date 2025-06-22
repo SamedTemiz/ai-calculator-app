@@ -5,14 +5,21 @@ import { CalculatorState, UnitFormat } from '@/types';
  * Format number based on unit format
  */
 export const formatNumber = (value: number, format: UnitFormat): string => {
-  switch (format) {
-    case 'scientific':
-      return value.toExponential(6);
-    case 'engineering':
-      return value.toExponential(3);
-    default:
-      return value.toString();
+  if (!isFinite(value)) return 'Error';
+  // For very large/small numbers, use scientific notation
+  const absValue = Math.abs(value);
+  if ((absValue >= 1e10 || (absValue > 0 && absValue < 1e-5))) {
+    // For scientific/engineering, use 5 decimals
+    return value.toExponential(5).replace(/\.0+e/, 'e').replace(/(e[+-]?\d+)$/, (m) => m.replace('+', ''));
   }
+  // For normal numbers, show up to 5 decimals, remove trailing zeros and dot
+  let str = value.toFixed(5);
+  if (str.includes('.')) {
+    str = str.replace(/\.0+$/, ''); // Remove .00000
+    str = str.replace(/(\.[0-9]*[1-9])0+$/, '$1'); // Remove trailing zeros after decimal
+    str = str.replace(/\.$/, ''); // Remove trailing dot
+  }
+  return str;
 };
 
 /**
