@@ -8,37 +8,54 @@
     "ai_theme": "AI Theme"
   },
   "calculator": {
-    "display_aria_label": "Calculator Display"
+    "title": "Calculator",
+    "history": "History",
+    "clear": "Clear"
   },
   "settings": {
     "title": "Settings",
-    "general_settings": "General Settings",
+    "language": "Language",
+    "theme": "Theme",
     "haptic_feedback": "Haptic Feedback",
     "sound_effects": "Sound Effects",
-    "language": "Language",
-    "english": "English",
-    "turkish": "Türkçe",
-    "favorite_themes": "Favorite Themes",
-    "no_favorite_themes": "No favorite themes yet.",
-    "data_management": "Data Management",
     "clear_ai_theme": "Clear Current AI Theme",
-    "clear_all_themes": "Clear All Custom Themes"
+    "clear_all_themes": "Clear All Themes",
+    "general_settings": "General Settings",
+    "data_management": "Data Management"
   },
   "aitheme": {
-    "premade_themes": "Pre-made Themes",
     "ai_generator_title": "AI Theme Generator",
     "example_prompts_title": "Example Prompts",
-    "example_prompts_note": "These examples use the API to generate unique themes.",
-    "usage_stats_title": "Usage Stats"
+    "example_prompts_note": "Tap a prompt to quickly try it!",
+    "favorites": "Favorite Themes",
+    "premade_themes": "Pre-made Themes",
+    "usage_stats": "Usage Stats",
+    "daily_limit": "Daily Limit",
+    "minute_limit": "Minute Limit",
+    "no_favorites": "No favorite themes yet.",
+    "apply": "Apply",
+    "remove": "Remove",
+    "save": "Save",
+    "generated_theme_title": "Generated Theme",
+    "primary": "Primary",
+    "secondary": "Secondary",
+    "background": "Background",
+    "text": "Text",
+    "sample_text": "Sample Text",
+    "add_to_favorites": "Add to Favorites",
+    "theme_type_predefined": "Pre-made Theme",
+    "theme_type_ai_generated": "AI Generated",
+    "theme_type_algorithm_generated": "Algorithm Generated",
+    "theme_type_custom": "Custom Theme",
+    "theme_light": "Light",
+    "theme_dark": "Dark",
+    "theme_batman": "Batman",
+    "theme_galaxy": "Galaxy",
+    "choose_theme": "Choose Theme"
   },
   "prompts": {
-    "neon_cyberpunk": "Neon Cyberpunk",
-    "ocean_sunset": "Ocean Sunset",
-    "forest_night": "Forest Night",
-    "galaxy_purple": "Galaxy Purple",
-    "retro_gaming": "Retro Gaming",
-    "minimal_white": "Minimal White",
-    "dark_tech": "Dark Tech",
-    "warm_coffee": "Warm Coffee"
+    "batman": "Batman",
+    "galaxy": "Galaxy",
+    "minimalist_blue": "Minimalist Blue"
   }
 } 

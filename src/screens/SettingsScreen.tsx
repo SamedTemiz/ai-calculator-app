@@ -37,7 +37,7 @@ const SettingsScreen: React.FC = () => {
     <div className="min-h-screen bg-background-gradient text-foreground p-4 space-y-6">
       <Card>
         <CardHeader>
-          <CardTitle>{t('settings.general_settings')}</CardTitle>
+          <CardTitle>{t('settings.general_settings') || t('settings.title')}</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="flex items-center justify-between">
@@ -92,34 +92,7 @@ const SettingsScreen: React.FC = () => {
 
       <Card>
         <CardHeader>
-          <CardTitle className="flex items-center gap-2">
-            <Heart className="w-5 h-5 text-red-500" /> {t('settings.favorite_themes')}
-          </CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-2">
-          {favorites.length > 0 ? (
-            favorites.map((theme) => (
-              <div key={theme.id} className="flex items-center justify-between p-2 bg-surface rounded-lg">
-                <span className="font-medium">{theme.name}</span>
-                <div className="flex gap-2">
-                   <Button size="icon" variant="ghost" onClick={() => handleApplyFavoriteTheme(theme)} data-testid={`apply-theme-${theme.id}`}>
-                    <Palette className="w-4 h-4" />
-                  </Button>
-                  <Button size="icon" variant="ghost" onClick={() => handleRemoveFavorite(theme.id)} data-testid={`remove-theme-${theme.id}`}>
-                    <Trash2 className="w-4 h-4 text-red-500" />
-                  </Button>
-                </div>
-              </div>
-            ))
-          ) : (
-            <p className="text-muted-foreground text-sm">{t('settings.no_favorite_themes')}</p>
-          )}
-        </CardContent>
-      </Card>
-      
-      <Card>
-        <CardHeader>
-          <CardTitle>{t('settings.data_management')}</CardTitle>
+          <CardTitle>{t('settings.data_management') || t('settings.title')}</CardTitle>
         </CardHeader>
         <CardContent className="space-y-2">
           <Button variant="destructive" onClick={handleClearAITheme} className="w-full" data-testid="clear-ai-theme-button">
