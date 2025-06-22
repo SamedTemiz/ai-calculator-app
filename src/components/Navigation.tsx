@@ -58,7 +58,6 @@ const Navigation: React.FC<NavigationProps> = ({ currentScreen, onScreenChange }
               type="button"
             >
               <IconComponent size={24} />
-              <span className="text-xs mt-1 font-medium">{label}</span>
             </button>
           );
         })}

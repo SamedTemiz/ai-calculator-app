@@ -1,24 +1,58 @@
 {
-  "settings": {
-    "title": "Ayarlar",
-    "clear_ai_theme": "Mevcut Yapay Zeka Temasını Temizle",
-    "clear_all_themes": "Tüm Özel Temaları Temizle",
-    "favorite_themes": "Favori Temalar",
-    "haptics": "Dokunsal Geri Bildirim",
-    "sound_effects": "Ses Efektleri",
-    "language": "Dil",
-    "turkish": "Türkçe",
-    "english": "İngilizce"
-  },
-  "calculator": "Hesap Makinesi",
-  "ai_theme": "YZ Tema",
   "navigation": {
     "calculator": "Hesap Makinesi",
     "settings": "Ayarlar",
-    "ai_theme": "YZ Tema"
+    "ai_theme": "AI Tema"
+  },
+  "calculator": {
+    "title": "Hesap Makinesi",
+    "history": "Geçmiş",
+    "clear": "Temizle"
+  },
+  "settings": {
+    "title": "Ayarlar",
+    "language": "Dil",
+    "theme": "Tema",
+    "haptic_feedback": "Dokunsal Geri Bildirim",
+    "sound_effects": "Ses Efektleri",
+    "clear_ai_theme": "Mevcut AI Temasını Temizle",
+    "clear_all_themes": "Tüm Temaları Temizle",
+    "general_settings": "Genel Ayarlar",
+    "data_management": "Veri Yönetimi"
   },
   "aitheme": {
+    "ai_generator_title": "AI Tema Üretici",
+    "example_prompts_title": "Örnek Komutlar",
+    "example_prompts_note": "Bir komuta dokunarak hızlıca deneyin!",
+    "favorites": "Favori Temalar",
     "premade_themes": "Hazır Temalar",
-    "ai_generator_title": "Yapay Zeka Tema Üreticisi"
+    "usage_stats": "Kullanım İstatistikleri",
+    "daily_limit": "Günlük Limit",
+    "minute_limit": "Dakika Limiti",
+    "no_favorites": "Henüz favori temanız yok.",
+    "apply": "Uygula",
+    "remove": "Kaldır",
+    "save": "Kaydet",
+    "generated_theme_title": "Oluşturulan Tema",
+    "primary": "Primary",
+    "secondary": "Secondary",
+    "background": "Arka Plan",
+    "text": "Metin",
+    "sample_text": "Örnek Metin",
+    "add_to_favorites": "Favorilere Ekle",
+    "theme_type_predefined": "Hazır Tema",
+    "theme_type_ai_generated": "AI Üretimi",
+    "theme_type_algorithm_generated": "Algoritma Üretimi",
+    "theme_type_custom": "Özel Tema",
+    "theme_light": "Açık",
+    "theme_dark": "Koyu",
+    "theme_batman": "Batman",
+    "theme_galaxy": "Galaksi",
+    "choose_theme": "Tema Seç"
+  },
+  "prompts": {
+    "batman": "Batman",
+    "galaxy": "Galaksi",
+    "minimalist_blue": "Minimalist Mavi"
   }
 } 

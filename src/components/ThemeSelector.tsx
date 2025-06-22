@@ -4,16 +4,18 @@ import { setCurrentTheme } from '@/store/themeSlice';
 import { ThemeType } from '@/types';
 import { THEMES } from '@/constants';
 import { cn } from '@/lib/utils';
+import { useTranslation } from 'react-i18next';
 
 const ThemeSelector: React.FC = () => {
   const dispatch = useAppDispatch();
   const currentTheme = useAppSelector((state) => state.theme.currentTheme);
+  const { t } = useTranslation();
 
   const themeOptions = [
-    { value: THEMES.LIGHT, label: 'Light', icon: '☀️' },
-    { value: THEMES.DARK, label: 'Dark', icon: '🌙' },
-    { value: THEMES.BATMAN, label: 'Batman', icon: '🦇' },
-    { value: THEMES.GALAXY, label: 'Galaxy', icon: '🌌' },
+    { value: THEMES.LIGHT, label: t('aitheme.theme_light'), icon: '☀️' },
+    { value: THEMES.DARK, label: t('aitheme.theme_dark'), icon: '🌙' },
+    { value: THEMES.BATMAN, label: t('aitheme.theme_batman'), icon: '🦇' },
+    { value: THEMES.GALAXY, label: t('aitheme.theme_galaxy'), icon: '🌌' },
   ];
 
   const handleThemeChange = (theme: ThemeType) => {
@@ -23,7 +25,7 @@ const ThemeSelector: React.FC = () => {
   return (
     <div className="space-y-4">
       <h3 className="text-lg font-semibold" style={{ color: 'var(--text-color)' }}>
-        Choose Theme
+        {t('aitheme.choose_theme')}
       </h3>
       <div className="grid grid-cols-2 gap-3">
         {themeOptions.map((theme) => (
