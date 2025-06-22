@@ -1,0 +1,24 @@
+{
+  "settings": {
+    "title": "Ayarlar",
+    "clear_ai_theme": "Mevcut Yapay Zeka Temasını Temizle",
+    "clear_all_themes": "Tüm Özel Temaları Temizle",
+    "favorite_themes": "Favori Temalar",
+    "haptics": "Dokunsal Geri Bildirim",
+    "sound_effects": "Ses Efektleri",
+    "language": "Dil",
+    "turkish": "Türkçe",
+    "english": "İngilizce"
+  },
+  "calculator": "Hesap Makinesi",
+  "ai_theme": "YZ Tema",
+  "navigation": {
+    "calculator": "Hesap Makinesi",
+    "settings": "Ayarlar",
+    "ai_theme": "YZ Tema"
+  },
+  "aitheme": {
+    "premade_themes": "Hazır Temalar",
+    "ai_generator_title": "Yapay Zeka Tema Üreticisi"
+  }
+} 

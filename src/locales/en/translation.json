@@ -1,0 +1,44 @@
+{
+  "app": {
+    "name": "AI Calculator"
+  },
+  "navigation": {
+    "calculator": "Calculator",
+    "settings": "Settings",
+    "ai_theme": "AI Theme"
+  },
+  "calculator": {
+    "display_aria_label": "Calculator Display"
+  },
+  "settings": {
+    "title": "Settings",
+    "general_settings": "General Settings",
+    "haptic_feedback": "Haptic Feedback",
+    "sound_effects": "Sound Effects",
+    "language": "Language",
+    "english": "English",
+    "turkish": "Türkçe",
+    "favorite_themes": "Favorite Themes",
+    "no_favorite_themes": "No favorite themes yet.",
+    "data_management": "Data Management",
+    "clear_ai_theme": "Clear Current AI Theme",
+    "clear_all_themes": "Clear All Custom Themes"
+  },
+  "aitheme": {
+    "premade_themes": "Pre-made Themes",
+    "ai_generator_title": "AI Theme Generator",
+    "example_prompts_title": "Example Prompts",
+    "example_prompts_note": "These examples use the API to generate unique themes.",
+    "usage_stats_title": "Usage Stats"
+  },
+  "prompts": {
+    "neon_cyberpunk": "Neon Cyberpunk",
+    "ocean_sunset": "Ocean Sunset",
+    "forest_night": "Forest Night",
+    "galaxy_purple": "Galaxy Purple",
+    "retro_gaming": "Retro Gaming",
+    "minimal_white": "Minimal White",
+    "dark_tech": "Dark Tech",
+    "warm_coffee": "Warm Coffee"
+  }
+} 
